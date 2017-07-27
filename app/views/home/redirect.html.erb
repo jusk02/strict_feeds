@@ -1,0 +1,10 @@
+<div id="code">
+  <%= @authorization_code %>
+</div>
+
+<script type="text/javascript">
+  var code = document.getElementById('code').innerHTML;
+
+  window.opener.location = `/?code=${code}`;
+  //window.close();
+</script>
